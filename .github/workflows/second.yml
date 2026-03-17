@@ -22,7 +22,7 @@ jobs:
       - name: Print rainbow banner
         run: |
           TEXT="$(cat notes.txt)"
-          figlet "$TEXT" | lolcat
+          figlet "Rainbow" | lolcat
 
   render-cowsay-banner:
     runs-on: ubuntu-latest
