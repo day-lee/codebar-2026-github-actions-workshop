@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v5
       # install figlet library, you can see lots from marketplace on the right side 
       - name: Install figlet
-        run: sudo apt-get update && sudo apt-get install -y figlet
+        run: sudo apt-get update && sudo apt-get install -y figlet lolcat
 
       - name: Print rainbow banner
         run: |
