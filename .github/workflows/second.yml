@@ -19,10 +19,10 @@ jobs:
       - name: Install figlet
         run: sudo apt-get update && sudo apt-get install -y figlet
 
-      - name: Print figlet banner from notes.txt
+      - name: Print rainbow banner
         run: |
           TEXT="$(cat notes.txt)"
-          figlet "$TEXT"
+          figlet "$TEXT" | lolcat
 
   render-cowsay-banner:
     runs-on: ubuntu-latest
