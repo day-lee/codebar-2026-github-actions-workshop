@@ -31,8 +31,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v5
         # cowsay is a library 
-      - name: Install cowsay
-        run: sudo apt-get update && sudo apt-get install -y cowsay
+      - name: Install cowsay # -y flag to automatically yes to interactive install
+        run: sudo apt-get update && sudo apt-get install -y cowsay && sudo  apt-get install -y cowsay-dev
 
       - name: Print cowsay banner from notes.txt
         run: |
