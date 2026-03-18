@@ -38,5 +38,5 @@ jobs:
         run: |
           TEXT="$(cat notes.txt)"
           cowsay "$TEXT"
-          cowsay -l | grep -v \/ | xargs echo -n | xargs -d\  -n1 -I% cowsay -f % % | less
-          # cowsay -f dolphin "Hello from the ocean!"
+          # cowsay -l | grep -v \/ | xargs echo -n | xargs -d\  -n1 -I% cowsay -f % % | less
+          cowsay -f stegosaurus "Hello from the past!"
