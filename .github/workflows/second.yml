@@ -38,3 +38,4 @@ jobs:
         run: |
           TEXT="$(cat notes.txt)"
           cowsay "$TEXT"
+          cowsay -f dolphin "Hello from the ocean!"
